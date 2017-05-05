@@ -1,7 +1,9 @@
-var Acronym = function(){};
+function parse(phrase) {
+  const wordList = phrase.match(/(\w+|[A-Z][a-z]+)/g);
+  return wordList.map(w => {
+    return w[0].toUpperCase()
+  }).join('')
 
-Acronym.prototype.parse = function(phrase) {
-  
-};
+}
 
-module.exports = Acronym;
+module.exports = {parse: parse};

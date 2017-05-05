@@ -9,7 +9,7 @@ describe('Acronyms are produced from', function(){
     expect(Acronyms.parse('Ruby on Rails')).toEqual('ROR');
   });
 
-  it('inconsistently cased phrases', function(){
+  fit('inconsistently cased phrases', function(){
     expect(Acronyms.parse('HyperText Markup Language')).toEqual('HTML');
   });
 
